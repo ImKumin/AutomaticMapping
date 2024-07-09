@@ -10,4 +10,11 @@ public class RewardResponseModel {
     public void setOwnerId(String ownerId) {
         this.ownerId = ownerId;
     }
+
+    @Override
+    public String toString() {
+        return "RewardResponseModel{" +
+                "ownerId='" + ownerId + '\'' +
+                '}';
+    }
 }

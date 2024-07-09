@@ -37,8 +37,11 @@ public class Main {
     }
 
     public static void automaticSolution(ModelMapper modelMapper) {
-        //TODO: Implement here an automatic solution
+        //TODO: Implement here an automatic solution.
+        // The normal strict mapping needs to execute as well for all of the other fields.
         // (I believe that Reflection needs to be used, check pseudoCode package to see my last example)
+        // Take into account that this mapping can happen in a nested class/mapping.
+        // Therefore, take performance also into account, since it is costly to loop through all of the fields once again after a normal mapping.
     }
 
     public static ModelMapper setupModelMapper() {
